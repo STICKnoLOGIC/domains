@@ -9,12 +9,15 @@ Point your portfolio at a subdomain that represents where you're from.
 ## Register a Subdomain
 
 1. **Fork** this repository
-2. **Create** a file at `subdomains/<your-subdomain>.json`
-3. **Validate** your file before opening a PR:
+2. **Find your DNS values** — see the [provider guides](#provider-guides)
+3. **Create** a file at `subdomains/<your-subdomain>.json`
+4. **Validate** your file before opening a PR:
    ```bash
    npx @is-pinoy-dev/validate ./subdomains/<your-subdomain>.json
    ```
-4. **Open a pull request** — your subdomain is live once it's merged and synced
+5. **Open a pull request** — your subdomain is live once it's merged and synced
+
+For the full step-by-step walkthrough including the PR template, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 > **Not sure where to find your CNAME or TXT values?** See the [provider guides](#provider-guides) below.
 
