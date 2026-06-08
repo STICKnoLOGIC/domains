@@ -53,7 +53,7 @@ jobs:
           failed=false
           for file in $files; do
             owner=$(jq -r '.owner.github' "$file")
-            if [ "$owner" != "$PR_AUTHOR" ]; then
+            if [ ${{ '$owner' != '$PR_AUTHOR' }} ]; then
               echo "Error: $file — owner.github \"$owner\" does not match PR author \"$PR_AUTHOR\""
               failed=true
             fi
